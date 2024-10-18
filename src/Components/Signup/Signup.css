@@ -1,0 +1,100 @@
+.signupParentDiv {
+  border: 1px solid #e0e0e0;
+  width: 400px;
+  padding: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.signupParentDiv img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+  height: auto;
+}
+
+.signupParentDiv .input {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  outline: none;
+  padding: 7px;
+  margin-bottom: 8px;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 14px;
+}
+
+.signupParentDiv .input:focus {
+  border-color: #002f34;
+  box-shadow: 0 0 0 2px rgba(0, 47, 52, 0.2);
+}
+
+.signupParentDiv button {
+  width: 100%;
+  height: 40px;
+  background-color: #002f34;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-top: 10px;
+}
+
+.signupParentDiv button:hover {
+  background-color: #00414b;
+}
+
+.signupParentDiv button:active {
+  transform: scale(0.98);
+}
+
+.signupParentDiv label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #002f34;
+  font-size: 14px;
+}
+
+.error {
+  color: #e41c38;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.signupParentDiv .login-message {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+.signupParentDiv .login-message a {
+  color: #002f34;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.signupParentDiv .login-message a:hover {
+  color: #00414b;
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  color: #002f34;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+}

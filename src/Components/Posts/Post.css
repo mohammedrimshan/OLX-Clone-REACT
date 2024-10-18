@@ -1,0 +1,107 @@
+.moreView {
+  margin: 16px 16px 24px;
+  padding: 16px 16px 32px;
+  background-color: #ebeeef;
+  border-radius: 4px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+}
+
+.heading :last-child {
+  font-size: 14px;
+  color: #002f34;
+}
+
+/* Ensuring horizontal display of product cards */
+.moreView .cards {
+  display: flex; /* Flexbox for horizontal alignment */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrolling */
+}
+
+.card {
+  margin-right: 15px;
+  padding: 10px; /* Add padding */
+  max-width: 222px;
+  width: 222px; /* Fixed width */
+  height: 270px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: white; /* Card background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; /* Fixed height for image */
+  overflow: hidden; /* Ensure image does not overflow */
+}
+
+.card .image img {
+  width: 100%; /* Make the image fill the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for image */
+}
+
+.card .content .rate {
+  margin-top: 10px;
+  font-size: 20px; /* Larger font for price */
+  font-weight: bold;
+  color: #000000; /* Price color */
+}
+
+.card .content .kilometer {
+  font-size: 14px;
+  color: #666; /* Grey color for category */
+}
+
+.card .content .name {
+  font-size: 16px;
+  font-weight: normal; /* Normal weight for name */
+  color: #002f34; /* Darker text color */
+}
+
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  color: #999; /* Lighter color for date */
+}
+
+.recommendations {
+  margin: 16px 16px 24px;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+}
+
+.recommendations .cards {
+  display: flex; /* Flexbox for horizontal alignment */
+}

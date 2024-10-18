@@ -1,0 +1,85 @@
+/* Banner.css */
+.bannerParentDiv {
+  position: relative;
+  width: 100vw; /* Full window width */
+  padding-top: 70px; /* Adjust padding to match the height of the original navbar */
+  z-index: 1;
+  background-color: #f7f8f9;
+}
+
+.bannerChildDiv {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.menuBar {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  padding: 10px 16px;
+  background-color: #ffffff; /* Optional: Add background color */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Align the category menu and other options on the left */
+.categoryMenu {
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Space between ALL CATEGORIES and other options */
+}
+
+.categoryMenu span {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 8px;
+  color: #002f34;
+  cursor: pointer;
+}
+
+.categoryMenu span:hover {
+  color: #ff8a3d;
+}
+
+.otherQuickOptions {
+  display: flex;
+  gap: 12px; /* Space between quick option items */
+  flex-wrap: wrap; /* Wrap to next line if necessary */
+}
+.otherQuickOptions span {
+  padding: 6px 12px; /* Padding for each item */
+  background-color: #f7f8f9; /* Optional: Background color for items */
+  border-radius: 3px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  color: #002f34; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.otherQuickOptions span:hover {
+  background-color: #ff8a3d; /* Change background on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.banner {
+  position: relative;
+  width: 100vw; /* Full window width */
+  height: 300px; /* Adjust the height as per your needs */
+}
+
+.banner img {
+  width: 100vw; /* Full window width */
+  height: 100%; /* Maintain image height */
+  object-fit: cover; /* Ensure the image covers the entire banner area */
+}
+
+@media only screen and (max-width: 700px) {
+  .otherQuickOptions {
+    display: none;
+  }
+
+  .menuBar {
+    justify-content: center;
+  }
+
+  .banner img {
+    height: 200px; /* Adjust for smaller screens */
+  }
+}

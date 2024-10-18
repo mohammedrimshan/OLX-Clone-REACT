@@ -1,0 +1,96 @@
+.footer {
+  background-color: #ebeeef;
+  color: #002f34;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #002f34;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-section ul li:hover {
+  color: #002f34;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #002f34;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.app-stores {
+  display: flex;
+  align-items: center; /* Vertically align images */
+  gap: 10px; /* Add spacing between the two images */
+}
+
+.app-store img {
+  width: 150px; /* Set the same width for both images */
+  height: auto; /* Keep the aspect ratio */
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
